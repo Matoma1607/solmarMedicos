@@ -36,19 +36,19 @@ body, .container, .row {
   display: block;
   margin: 0 auto;
   border-radius: 17px;
-  box-shadow: 0 4px 12px rgba(185, 205, 201, 1);
+  box-shadow: 0 4px 12px #839996;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(185, 205, 201, 1);
+  box-shadow: 0 6px 20px #839996;
 }
 
 /* Banner de subtítulo */
 .subtitulo-banner {
-  background-color: #b9cdc9;
-  color: #9ca4a4;
+  background-color: #839996;
+  color: #0a0b0b;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 24px;
@@ -67,7 +67,7 @@ body, .container, .row {
 }
 
 .btn-mapa {
-  background-color: #b9cdc9;
+  background-color: #839996;
   color: #333;
   border: none;
   border-radius: 20px;
@@ -77,12 +77,12 @@ body, .container, .row {
 }
 
 .btn-mapa:hover {
-  background-color: #a3bdb8;
+  background-color: #839996;
   color: #000;
 }
 
 .btn-whatsapp {
-  background-color: #b9cdc9;
+  background-color: #839996;
   color: white;
   border: none;
   border-radius: 20px;
