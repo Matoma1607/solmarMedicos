@@ -1,0 +1,100 @@
+/* Tipografía Montserrat ya cargada desde Google Fonts en el HTML */
+
+body {
+  background-color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+/* Fondo con imagen modo transparente (marca de agua) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/6837218/pexels-photo-6837218.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08; /* Ajustá para más o menos transparencia */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Asegura que el contenido esté sobre el fondo */
+body, .container, .row {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Logo centrado y con estilo */
+.logo {
+  max-width: 290px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 17px;
+  box-shadow: 0 4px 12px rgba(185, 205, 201, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(185, 205, 201, 1);
+}
+
+/* Banner de subtítulo */
+.subtitulo-banner {
+  background-color: #b9cdc9;
+  color: #9ca4a4;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-mapa {
+  background-color: #b9cdc9;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 6px 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-mapa:hover {
+  background-color: #a3bdb8;
+  color: #000;
+}
+
+.btn-whatsapp {
+  background-color: #b9cdc9;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 6px 14px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  color: white;
+}
